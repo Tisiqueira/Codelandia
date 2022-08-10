@@ -1,0 +1,293 @@
+:root {
+  --blue: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+
+  --title: #313131;
+  --text: #f3f5f7;
+  
+  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  --lexend: 'Lexend Deca', sans-serif;
+}
+
+*{
+  box-sizing: boder-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, main, footer{
+  background: var(--text);
+  font-family: var(--lexend);
+}
+
+header{
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background: var(--linear);
+}
+
+nav{
+  width: 90%;
+  height: 60%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 41px 269px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+  top: 3rem;
+  font-family: 'Lexend Deca', sans-serif;;
+  font-style:normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: right;
+}
+
+.wrapper-header{
+  justify-content: space-between;
+  
+}
+
+
+
+#codelandia-home{
+  display: flex;
+  
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+#blog{
+  display: flex;
+  
+  text-decoration: none;
+  color: var(--white);
+}
+
+.wrapper-search{
+  display: flex;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #FFFFFF33;
+  color: var(--white);
+  
+}
+
+
+#search{
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+  font-size: 18px;
+
+  margin-left: 20.28px;
+  width: 100%;
+}
+
+::placeholder {
+  font-family: var(--lexend) ;
+  color: var(--white);
+}
+
+/*body*/
+
+main{
+  margin-bottom: 50px;
+}
+.wrapper-box{
+  
+  width: 92%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: 50px;
+
+  background:var(--text);
+  
+}
+
+article{
+  background:var(--white);
+  width:98%;
+  
+  border-radius: 5px;
+  
+  margin: 25px auto;
+}
+
+.header-article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #717171;
+  font-size: 26px;
+  margin-bottom: 23px;
+  margin-top: 22px;
+  padding: 15px;
+  
+}
+
+.header-article h6 date{
+  color: rgba(51, 51, 51, 0.829);
+  font-family: var(--lexend);
+  font-size: 26px;
+  
+  position: absolute;
+  width: 100px;
+}
+
+.header-article span{
+  position: flex;
+  left: 86.56%;
+ 
+  top: 19.51%;
+  bottom: 79.25%;
+
+  color: #574AE8;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26px;
+  
+  padding: 15px;
+}
+
+.main-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #717171;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 15px;
+
+}
+
+footer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: var(--linear);
+  
+}
+
+footer p{
+  margin-bottom: 10px;
+}
+footer span{
+  color: #574AE8;
+  font-size: 24px;
+  
+}
+footer a{
+  text-decoration: none;
+  font-style: normal;
+  color: #0e0d0d;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  nav{
+    margin: 48px 20px;
+  }
+
+  nav a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .wrapper-search{
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF33;
+    color: var(--white);
+    font-size: 14px;
+  }
+
+  #search{
+    background-color: transparent;
+    border: 0;
+    color: var(--white);
+    font-size: 14px;
+    
+    margin-left: 13.19px  ;
+    width: 100%;
+  }
+
+  .header-article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #717171;
+    font-size: 14px;
+    margin-bottom: 16px;
+    margin-top: 15px;
+    padding: 15px;
+    
+  }
+
+  .header-article h6 date{
+    color: rgba(51, 51, 51, 0.829);
+    font-family: var(--lexend);
+    font-size: 14px;
+    
+    position: absolute;
+    width: 100px;
+  }
+  
+  .header-article span{
+    position: flex;
+    left: 86.56%;
+   
+    top: 19.51%;
+    bottom: 79.25%;
+  
+    color: #574AE8;
+    size: 14px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    
+    padding: 15px;
+  }
+  
+  .main-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #717171;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 15px;
+  
+  }
+
+}
